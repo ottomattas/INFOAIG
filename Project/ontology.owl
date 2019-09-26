@@ -22,107 +22,86 @@
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#availableat -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isCoveredIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#availableat">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#time"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#contains -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#contains">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#has -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#has">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isCoveredIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#hasClass -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isLearnedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#hasClass">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#occupies"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#hasFriend -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#hasFriend">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isLearnedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#learns -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isLocatedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#learns">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#occupies -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#occupies">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#overlap -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isOverlappedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#overlap">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isOverlappedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#prerequisiteof -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isRequiredFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#prerequisiteof">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isRequiredFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#similarto -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isSimilarTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#similarto">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isSimilarTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#teaches -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isTaughtAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#teaches">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isTaughtAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#time"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#uses -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isTaughtBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#uses">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isTaughtBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isTaughtVia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#isTaughtVia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
     </owl:ObjectProperty>
