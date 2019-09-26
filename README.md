@@ -1,2 +1,1 @@
-# UU
-Utrecht University
+# Intelligent Agents
