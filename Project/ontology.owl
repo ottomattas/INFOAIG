@@ -147,26 +147,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#name -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -488,7 +468,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturerA">
         <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></name>
     </owl:NamedIndividual>
     
 
@@ -501,25 +480,19 @@
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentC -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentC">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></name>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentC"/>
     
 
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentD -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentD">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></name>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentD"/>
     
 
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentE -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentE">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></name>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentE"/>
 </rdf:RDF>
 
 
