@@ -177,17 +177,13 @@
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom"/>
     
 
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
     
 
 
@@ -201,17 +197,13 @@
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
     
 
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
     
 
 
@@ -233,25 +225,19 @@
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#student"/>
     
 
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#time -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#time">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#time"/>
     
 
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
     
 
 
