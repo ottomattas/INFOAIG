@@ -232,42 +232,34 @@
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#A -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#AGENTS -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#A">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#AGENTS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#B -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#COGNITIVE_PROCESSING -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#COGNITIVE_PROCESSING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#C -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#EXPERIMENT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#C">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#EXPERIMENT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#D -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#FORMULA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#D">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#E -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#E">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#FORMULA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
     </owl:NamedIndividual>
     
 
@@ -280,10 +272,32 @@
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOAIG -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOEA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOAIG">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOEA">
         <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTA"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOIAG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOIAG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTA"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTC"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4"/>
     </owl:NamedIndividual>
     
 
@@ -292,6 +306,186 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAIR">
         <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTC"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTC"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMAS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMCARG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMCARG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMCM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMCM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMCRWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMCRWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMDM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMDM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMEPL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMEPL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTC"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMLHVL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMLHVL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMMDI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMMDI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMNLP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMNLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMPR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMPR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMPSM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMPSM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMSOC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#INFOMSOC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#LECTURERE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#MACHINELEARNING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#MACHINELEARNING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
     </owl:NamedIndividual>
     
 
@@ -304,74 +498,72 @@
     
 
 
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#NATURALLANGUAGE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#NATURALLANGUAGE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#REASONING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#REASONING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SATURDAY -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SATURDAY">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#day"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SATURDAY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SIMULATION -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SIMULATION">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER1 -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER2 -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER3 -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTC -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER4 -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#slot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER5 -->
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTE -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER7 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SEMESTER8">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTE">
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
     </owl:NamedIndividual>
     
 
@@ -418,8 +610,72 @@
 
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SUNDAY -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SUNDAY">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#day"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SUNDAY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM5"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM6"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM7"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM8"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#THEORY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#THEORY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
     </owl:NamedIndividual>
     
 
@@ -432,6 +688,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TLMV13020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TLMV13020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTB"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM2"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TUESDAY -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TUESDAY">
@@ -440,34 +706,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#WBMV05003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#WBMV05003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTA"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#WBMV13005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#WBMV13005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#course"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#SLOTA"/>
+        <isTaughtAt rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#TERM1"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#WEDNESDAY -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#WEDNESDAY">
         <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#day"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#basicmathskills -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#basicmathskills">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#topic"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#formula -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#formula">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#methodology"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturerA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturerA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#lecturer"/>
     </owl:NamedIndividual>
     
 
@@ -493,6 +755,30 @@
     <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentE -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#studentE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/62599/ontologies/2019/8/untitled-ontology-10#classroom"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
