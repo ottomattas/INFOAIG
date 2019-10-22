@@ -1,11 +1,10 @@
 package main;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.Set;
-import java.nio.file.Paths;
 
 import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxEditorParser;
 import org.semanticweb.HermiT.Reasoner;
@@ -27,14 +26,13 @@ import org.semanticweb.owlapi.util.BidirectionalShortFormProvider;
 import org.semanticweb.owlapi.util.BidirectionalShortFormProviderAdapter;
 import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
-import org.semanticweb.owlapi.util.AnnotationValueShortFormProvider;
 
 public class DLQuery {
 
     public static void main(String[] args) throws Exception {
     	
 
-        String wine = new String(Files.readAllBytes(Paths.get("lib/courseOntology.owl")), "UTF-8");
+        String wine = new String(Files.readAllBytes(Paths.get("./courseOntology.owl")), "UTF-8");
         // Load an example ontology.
         final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         final OWLOntology ontology = manager
