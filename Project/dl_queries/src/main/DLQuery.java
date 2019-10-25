@@ -27,16 +27,16 @@ import org.semanticweb.owlapi.util.BidirectionalShortFormProviderAdapter;
 import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
-public class DLQuery {
+/*public class DLQuery {
 
-    public static void main(String[] args) throws Exception {
+    public DLQuery() throws Exception {
     	
 
-        String wine = new String(Files.readAllBytes(Paths.get("./courseOntology.owl")), "UTF-8");
+        String onto = new String(Files.readAllBytes(Paths.get("../courseOntology.owl")), "UTF-8");
         // Load an example ontology.
         final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         final OWLOntology ontology = manager
-                .loadOntologyFromOntologyDocument(new StringDocumentSource(wine));
+                .loadOntologyFromOntologyDocument(new StringDocumentSource(onto));
         
         // We need a reasoner to do our query answering
         // This example uses HermiT: http://hermit-reasoner.com/
@@ -58,7 +58,7 @@ public class DLQuery {
         
         }
 
-    }
+    }*/
 
 
 class DLQueryEngine {
@@ -147,60 +147,50 @@ class DLQueryParser {
         }
     }
 
-class DLQueryPrinter {
-    private final DLQueryEngine dlQueryEngine;
-    private final ShortFormProvider shortFormProvider;
-
-    public DLQueryPrinter(DLQueryEngine engine, ShortFormProvider shortFormProvider) {
-        this.shortFormProvider = shortFormProvider;
-        dlQueryEngine = engine;
-        }
-
-    public void printExample() throws IOException  {
-    	String example = "Courses taught in timeslot C, by lecturer B";
-    	System.out.println(example);
-    	
-    	String query = "course and isTaughtAt value SLOT_C and isTaughtBy value LECTURER_B";
-    	
-    	System.out.println("\nInstances:");
-    	Set<OWLNamedIndividual> individuals = dlQueryEngine.getInstances(
-    			query, false);
-    	for (OWLEntity entity : individuals) {
-        	System.out.println(shortFormProvider.getShortForm(entity));
-        }
-    	
-    	System.out.println("\nSuperClasses:");
-    	Set<OWLClass> superClasses = dlQueryEngine.getSuperClasses(
-    			query, false);
-    	for (OWLClass class_ : superClasses) {
-        	System.out.println(shortFormProvider.getShortForm(class_));
-        }
-    	
-    	System.out.println("\nSubClasses:");
-    	Set<OWLClass> subClasses = dlQueryEngine.getSubClasses(
-    			query, false);
-    	for (OWLClass class_ : subClasses) {
-        	System.out.println(shortFormProvider.getShortForm(class_));
-        }
-    	
-    }
-
-      
-    public String returnEntity(String query){
-    	String returnString = "";
-
-        for (OWLEntity entity : quizQuery(query)) {
-        	returnString=shortFormProvider.getShortForm(entity);
-        	return returnString;
-        }
-        return "";
-    }
-    
-    public Set<OWLNamedIndividual> quizQuery(String classExpression) {
-                Set<OWLNamedIndividual> individuals = dlQueryEngine.getInstances(
-                        classExpression, false);
-                return individuals;
-        }
-    
-    
-    }
+/*
+ * class DLQueryPrinter { private final DLQueryEngine dlQueryEngine; private
+ * final ShortFormProvider shortFormProvider;
+ * 
+ * public DLQueryPrinter(DLQueryEngine engine, ShortFormProvider
+ * shortFormProvider) { this.shortFormProvider = shortFormProvider;
+ * dlQueryEngine = engine; }
+ * 
+ * public void printExample() throws IOException { String example =
+ * "Courses taught in timeslot C, by lecturer B"; System.out.println(example);
+ * 
+ * String query =
+ * "course and isTaughtAt value SLOT_C and isTaughtBy value LECTURER_B";
+ * 
+ * System.out.println("\nInstances:"); Set<OWLNamedIndividual> individuals =
+ * dlQueryEngine.getInstances( query, false); for (OWLEntity entity :
+ * individuals) { System.out.println(shortFormProvider.getShortForm(entity)); }
+ * 
+ * System.out.println("\nSuperClasses:"); Set<OWLClass> superClasses =
+ * dlQueryEngine.getSuperClasses( query, false); for (OWLClass class_ :
+ * superClasses) { System.out.println(shortFormProvider.getShortForm(class_)); }
+ * 
+ * System.out.println("\nSubClasses:"); Set<OWLClass> subClasses =
+ * dlQueryEngine.getSubClasses( query, false); for (OWLClass class_ :
+ * subClasses) { System.out.println(shortFormProvider.getShortForm(class_)); }
+ * 
+ * }
+ * 
+ * public void getInstances(String query) { Set<OWLNamedIndividual> individuals
+ * = dlQueryEngine.getInstances(query, false); for (OWLEntity entity :
+ * individuals) { System.out.println(shortFormProvider.getShortForm(entity)); }
+ * }
+ * 
+ * 
+ * public String returnEntity(String query){ String returnString = "";
+ * 
+ * for (OWLEntity entity : quizQuery(query)) {
+ * returnString=shortFormProvider.getShortForm(entity); return returnString; }
+ * return ""; }
+ * 
+ * public Set<OWLNamedIndividual> quizQuery(String classExpression) {
+ * Set<OWLNamedIndividual> individuals = dlQueryEngine.getInstances(
+ * classExpression, false); return individuals; }
+ * 
+ * 
+ * }
+ */
