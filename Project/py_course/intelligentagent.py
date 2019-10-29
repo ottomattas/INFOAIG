@@ -23,11 +23,11 @@ any object , data or annotation property name
 '''
 from owlready2 import *
 import owlready2
-onto = get_ontology("/Users/promeaoeg/Downloads/courseOntology.owl")
+
+# Load the ontology
+onto = get_ontology("https://raw.githubusercontent.com/ottomattas/INFOIAG/master/Project/courseOntology.owl")
 onto.load() 
     
 # we have to define the location of JRE, otherwise the reasoner won't load
-owlready2.JAVA_EXE ="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
-sync_reasoner() 
-
-
+owlready2.JAVA_EXE ="/usr/bin/java"
+sync_reasoner()
