@@ -39,12 +39,8 @@
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/hasOverlapWith">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/course"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/course"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#covers"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/isCoveredIn"/>
-        </owl:propertyChainAxiom>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/topic"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/topic"/>
         <rdfs:label>hasOverlapWith</rdfs:label>
     </owl:ObjectProperty>
     
@@ -120,17 +116,6 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/isSimilarTo -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/isSimilarTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/course"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/course"/>
-        <rdfs:label>isSimilarTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://webprotege.stanford.edu/isTaughtBy -->
 
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/isTaughtBy">
@@ -196,26 +181,28 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#hasSameMethodAs -->
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#hasOverlapWith -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#hasSameMethodAs">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#hasOverlapWith">
         <rdfs:domain rdf:resource="http://webprotege.stanford.edu/course"/>
         <rdfs:range rdf:resource="http://webprotege.stanford.edu/course"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/isTaughtVia"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isUsedIn"/>
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#covers"/>
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/isCoveredIn"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith -->
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#hasSameMethodAs -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/day"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/day"/>
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#hasSameMethodAs">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/course"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/course"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isUsedIn"/>
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/isTaughtVia"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -294,15 +281,6 @@
     <owl:Class rdf:about="http://webprotege.stanford.edu/bol">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/uithof"/>
         <rdfs:label xml:lang="en">bol</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/city -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/city">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/location"/>
-        <rdfs:label xml:lang="en">city</rdfs:label>
     </owl:Class>
     
 
@@ -661,7 +639,35 @@
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_afternoon"/>
+                    <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_morning"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_afternoon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_afternoon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_morning -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_morning">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd"/>
     </owl:Class>
     
 
@@ -702,6 +708,26 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday_afternoon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday_afternoon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday_morning -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday_morning">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slota"/>
     </owl:Class>
     
 
@@ -757,48 +783,6 @@
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slota -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slota">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/slot"/>
     </owl:Class>
     
@@ -807,48 +791,6 @@
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotb -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotb">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/slot"/>
     </owl:Class>
     
@@ -857,54 +799,6 @@
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotc -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotc">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/slot"/>
     </owl:Class>
     
@@ -913,66 +807,6 @@
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#isCombinedWith"/>
-                                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/slot"/>
     </owl:Class>
     
@@ -1058,6 +892,26 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday_afternoon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday_afternoon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotb"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday_morning -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday_morning">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotc"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday"/>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday">
@@ -1066,10 +920,49 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday_afternoon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday_afternoon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday_morning -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday_morning">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotb"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday"/>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday_afternoon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday_afternoon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#afternoon"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday_morning -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday_morning">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#morning"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slota"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
     </owl:Class>
     
 
@@ -1599,6 +1492,8 @@
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/SLOT_A">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/slot"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slota"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY_MORNING"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_MORNING"/>
         <rdfs:label>SLOT_A</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1609,6 +1504,7 @@
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/SLOT_B">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/slot"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotb"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#THURSDAY_AFTERNOON"/>
         <rdfs:label>SLOT_B</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1619,6 +1515,7 @@
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/SLOT_C">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/slot"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotc"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY_AFTERNOON"/>
         <rdfs:label>SLOT_C</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1629,6 +1526,9 @@
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/SLOT_D">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/slot"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_AFTERNOON"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_MORNING"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_AFTERNOON"/>
         <rdfs:label>SLOT_D</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1856,6 +1756,25 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_AFTERNOON -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_AFTERNOON">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_afternoon"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_MORNING"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_AFTERNOON"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_MORNING -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#FRIDAY_MORNING">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#friday_morning"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_AFTERNOON"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#LECTURER_F -->
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#LECTURER_F">
@@ -1900,6 +1819,24 @@
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY_AFTERNOON -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY_AFTERNOON">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday_afternoon"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#THURSDAY_MORNING"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY_MORNING -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#MONDAY_MORNING">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#monday_morning"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_MORNING"/>
     </owl:NamedIndividual>
     
 
@@ -1962,6 +1899,23 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#THURSDAY_AFTERNOON -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#THURSDAY_AFTERNOON">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday_afternoon"/>
+        <owl:sameAs rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY_MORNING"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#THURSDAY_MORNING -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#THURSDAY_MORNING">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#thursday_morning"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY -->
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY">
@@ -1970,10 +1924,42 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY_AFTERNOON -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY_AFTERNOON">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday_afternoon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY_MORNING -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#TUESDAY_MORNING">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#tuesday_morning"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY -->
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_AFTERNOON -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_AFTERNOON">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday_afternoon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_MORNING -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#WEDNESDAY_MORNING">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#wednesday_morning"/>
     </owl:NamedIndividual>
     
 
@@ -2005,6 +1991,15 @@
             <rdf:Description rdf:about="http://webprotege.stanford.edu/bol"/>
             <rdf:Description rdf:about="http://webprotege.stanford.edu/kbg"/>
             <rdf:Description rdf:about="http://webprotege.stanford.edu/ruppert"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slota"/>
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotb"/>
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotc"/>
+            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310#slotd"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
