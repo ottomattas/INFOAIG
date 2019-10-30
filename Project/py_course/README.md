@@ -15,3 +15,8 @@ sudo -H python3 -m pip install --upgrade certifi
 sudo -H python3 -m pip install --upgrade pip
 sudo -H python3 -m pip install --upgrade Owlready2
 ```
+### Install for querying the ontology
+```
+sudo -H python3 -m pip install --upgrade pip
+sudo -H python3 -m pip install rdflib
+```
