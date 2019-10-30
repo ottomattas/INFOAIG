@@ -33,31 +33,54 @@ class SparqlQueries:
     def search(self):
         #Search query is given here
         #Base URL of your ontology has to be given here
-        query = "base <http://webprotege.stanford.edu/project/jXugAxnqqUMqXPExOa310> " \
-                "SELECT ?s ?p ?o " \
+        query = "SELECT ?s ?p ?o " \
                 "WHERE { " \
                 "?s ?p ?o . " \
                 "}"
 
+        query_2 = "SELECT ?p " \
+                "WHERE { " \
+                "?s ?p ?o . " \
+                "}"
+
+        query_3 = "SELECT ?class " \
+                "WHERE { " \
+                "?class rdfs:subClassOf ?course " \
+                "}"
+
         # Run the query
-        resultsList = self.graph.query(query)
+        resultsList = self.graph.query(query_3)
 
+        ################
         # Create JSON object
-        response = []
-        for item in resultsList:
-            s = str(item['s'].toPython())
-            s = re.sub(r'.*#',"",s)
+        #response = []
+        #for item in resultsList:
+        #    s = str(item['s'].toPython())
+        #    s = re.sub(r'.*#',"",s)
 
-            p = str(item['p'].toPython())
-            p = re.sub(r'.*#', "", p)
+        #    p = str(item['p'].toPython())
+        #    p = re.sub(r'.*#', "", p)
 
-            o = str(item['o'].toPython())
-            o = re.sub(r'.*#', "", o)
-            response.append({'s' : s, 'p' : p, "o" : o})
+        #    o = str(item['o'].toPython())
+        #    o = re.sub(r'.*#', "", o)
+        #    response.append({'s' : s, 'p' : p, "o" : o})
 
         # Print out the response for temporary visualisation
+        #print(response)
+        #return response
+
+        ################
+        #for item in resultsList:
+        #    print(item)
+
+        response = []
+        for item in resultsList:
+           s = str(item['class'].toPython())
+           s = re.sub(r'.*#',"",s)
+           response.append(s)
+
         print(response)
-        return response
+        return ", ".join(response).replace("_", " ")
 
 runQuery = SparqlQueries()
 runQuery.search()
