@@ -24,10 +24,13 @@ any object , data or annotation property name
 from owlready2 import *
 import owlready2
 
+# Set Java environment variable
+java_home = ((subprocess.check_output(['which','java'])).decode('utf-8')).rstrip()
+
 # Load the ontology
 onto = get_ontology("https://raw.githubusercontent.com/ottomattas/INFOIAG/master/Project/courseOntology.owl")
-onto.load() 
-    
+onto.load()
+
 # we have to define the location of JRE, otherwise the reasoner won't load
-owlready2.JAVA_EXE ="/usr/bin/java"
+owlready2.JAVA_EXE = java_home
 sync_reasoner()
