@@ -125,7 +125,7 @@ def extract_preferences():
                                         'BOL_3.100, RUPPERT_042, RUPPERT_115]')
     location_preference = input('Do you prefer or dislike certain location? ')
     print('')
-    print('These are your friends: ANNE, BERT, JOHHNY, JOSIE, TRACY')
+    print('These are your friends: [ANNE, BERT, JOHHNY, JOSIE, TRACY]')
     friend_preference = input('Do you want to take the courses that a friend'
                               ' chooses into account? ')
     friends = [] 
@@ -347,7 +347,7 @@ def utility_function(preferences):
 utility_function(extract_preferences()) 
 
 restart_or_not = input('Do you want to run through the program again for '
-                       'the next semeter? YES / NO ')
+                       'the next semester? YES / NO ')
 if restart_or_not == 'YES':
     utility_function(extract_preferences())
 
