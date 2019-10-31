@@ -5,7 +5,8 @@
 Currently tested on versions [3.7.5](https://www.python.org/downloads/release/python-375/) and [3.8.0](https://www.python.org/downloads/release/python-380/).
 
 ### Install required Python libraries
-For this, we use `pip` as the standard package manager for Python. In case you want to learn more, visit the [project website](https://pypi.org/project/pip/).
+For this, we use `pip` as the standard package manager for Python. In case you want to learn more, visit the [project website](https://pypi.org/project/pip/). 
+We use `sudo` with the `-H` flag which makes sure we have all the environment variables loaded from the user _HOME_. Also, we call `pip` via the proper Python implemetation, using the `-m` flag.
 
 #### **owlready2** for importing the Ontology
 ```
@@ -20,11 +21,8 @@ sudo -H python3 -m pip install --upgrade rdflib
 
 ## Running the code
 As the ontology file is loaded from this repository when agent is ran, you can make sure it is available [here](https://github.com/ottomattas/INFOIAG/blob/master/Project/courseOntology.owl).
-
-### 
-
 ```
-
+python3 intelligentagent.py
 ```
 
 ## Known issues
