@@ -18,6 +18,11 @@ sudo -H python3 -m pip install --upgrade owlready2
 sudo -H python3 -m pip install --upgrade pip
 sudo -H python3 -m pip install --upgrade rdflib
 ```
+#### **numpy** for the utility function
+```
+sudo -H python3 -m pip install --upgrade pip
+sudo -H python3 -m pip install --upgrade numpy
+```
 
 ## Running the code
 As the ontology file is loaded from this repository when agent is ran, you can make sure it is available [here](https://github.com/ottomattas/INFOIAG/blob/master/Project/courseOntology.owl).
