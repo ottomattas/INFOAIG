@@ -11,9 +11,16 @@ import numpy as np
 ## Optional: For debugging
 #owlready2.set_log_level(9) 
 
-# To load the reasoner, we need to define the location of JRE
-# this varible possibily does not need to be set on Windows 
-owlready2.JAVA_EXE = owlready2.JAVA_EXE ="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
+# Define a variable for the JRE location
+# macOS Catalina
+java_home = ((subprocess.check_output(['which','java'])).decode('utf-8')).rstrip()
+# macOS pre-Catalina
+#java_home = "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
+# Windows
+### WIP
+
+# To load the reasoner, we need to load the JRE through the variable
+owlready2.JAVA_EXE = java_home
 
 # the following function was created to make Description logic querying of the 
 # ontology possible, directly from within this agent
