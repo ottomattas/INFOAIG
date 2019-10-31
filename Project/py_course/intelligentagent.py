@@ -11,10 +11,8 @@ import numpy as np
 ## Optional: For debugging
 #owlready2.set_log_level(9) 
 
-# Get Java environment variable
-java_home = ((subprocess.check_output(['which','java'])).decode('utf-8')).rstrip()
 # To load the reasoner, we need to define the location of JRE
-owlready2.JAVA_EXE = java_home
+owlready2.JAVA_EXE = owlready2.JAVA_EXE ="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 
 class SparqlQueries:
     def __init__(self):
@@ -76,7 +74,7 @@ def extract_preferences():
     finished_course = input('Have you already finished a course in term {}? If yes type the course code. '.format(which_term))
     finished_courses = []
     finished_courses.append(finished_course)
-    if finished_course != []: # meaning the answer is not empty
+    if len(finished_course) >= 1: # meaning the answer is not empty
         other_course = input('And maybe another one? Else press enter to continue. ')
         if other_course : # again meaning the answer is not empty
             finished_courses.append(other_course)
