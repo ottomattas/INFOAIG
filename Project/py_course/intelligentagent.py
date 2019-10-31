@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Intelligent Agents
+# Intelligent Agents, University Utrecht 
 # Team project - coursePlanner agent
 # Tjalle Galama, Ernö Groeneweg, Otto Mättas, Shaoya Ren, Vincent de Wit
 
@@ -12,8 +12,11 @@ import numpy as np
 #owlready2.set_log_level(9) 
 
 # To load the reasoner, we need to define the location of JRE
+# this varible possibily does not need to be set on Windows 
 owlready2.JAVA_EXE = owlready2.JAVA_EXE ="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 
+# the following function was created to make Description logic querying of the 
+# ontology possible, directly from within this agent
 class SparqlQueries:
     def __init__(self):
         my_world = World()
@@ -60,26 +63,27 @@ class SparqlQueries:
     
 runQuery = SparqlQueries()
 ontology_dictionaries = runQuery.search() 
-# print(ontology_list)
 
 def intersect(lst1, lst2): # to intersect two lists
     lst3 = [value for value in lst1 if value in lst2] 
     return lst3 
 
 def extract_preferences():
-    which_term = int(input('For which term (1/2/3/4) do you want to receive a recommendation? '))
-    amount_of_courses_to_be_found = int(input('How many courses to you want to get recommended? (1/2/3) '))
-    print('')
+    which_term = int(input('For which term (1/2/3/4) do you want to receive a '
+                           'recommendation? '))
+    amount_of_courses_to_be_found = int(input('How many courses to you want to'
+                                              ' get recommended? (1/2/3) '))
+    print('') # to create a blank line 
     print('For the following questions, press enter if you have no answer.')
-    finished_course = input('Have you already finished a course in term {}? If yes type the course code. '.format(which_term))
+    finished_course = input('Have you already finished a course in term {}? ' 
+                            'If yes type the course code. '.format(which_term))
     finished_courses = []
-    finished_courses.append(finished_course)
-    if len(finished_course) >= 1: # meaning the answer is not empty
-        other_course = input('And maybe another one? Else press enter to continue. ')
-        if other_course : # again meaning the answer is not empty
+    if finished_course: # meaning the answer is not empty
+        finished_courses.append(finished_course)
+        other_course = input('And another one? Or press enter to continue. ')
+        if other_course: 
             finished_courses.append(other_course)
-    elif finished_course == []:
-        finished.course.append('empty')
+
     chosen_courses = [] 
     if which_term == 1:
         if intersect(finished_courses,['INFOMAIR']) == []:
@@ -87,23 +91,22 @@ def extract_preferences():
             print('You have to take INFOMAIR. It is added as a chosen course.')
     if which_term == 3 and intersect(finished_courses,['WBMV05003']) == []:
         chosen_courses.append('WBMV05003') # mandatory course 
-        print('You have to take WBMV05003. It is added as a chosen course.')
-    elif chosen_courses == []:
-        chosen_courses.append('empty')
-    
-    chosen_course = input('Have you already chosen a course for term {}? If yes type the course code. '.format(which_term))
-    if len(chosen_course)>1:
-        if intersect(chosen_course,chosen_courses) == []: # so we don't get duplicates 
+        print('You have to take WBMV05003. It is added as a chosen course.')    
+    chosen_course = input('Have you already chosen a course for term {}? If '
+                          'yes type the course code. '.format(which_term))
+    if chosen_course:
+        if intersect(chosen_course,chosen_courses) == []: # no duplicates 
             # here we could build in the isPrerequisiteFor relation,
             # which would block you to choose a course if you haven't fnished
             # the prerequisite + give some explanation 
             chosen_courses.append(chosen_course)
             amount_of_courses_to_be_found -= 1
-            
             if amount_of_courses_to_be_found != 0:
-                chosen_course = input('And maybe you already chose another one? ')
+                chosen_course = input('And maybe you already chose one more? '
+                                      'Or press enter to continue.')
                 if chosen_course:
-                    if intersect(chosen_course,chosen_courses) == []:
+                    if intersect(chosen_course,chosen_courses) == []: 
+                        # to prevent duplicates 
                         chosen_courses.append(chosen_course)
                         amount_of_courses_to_be_found -= 1
 
@@ -112,9 +115,11 @@ def extract_preferences():
     lecturer_preference = input('Do you prefer or dislike a certain teacher? ')
     print('')
     print('The available time-slots are: SLOT_A, SLOT_B, SLOT_C, SLOT_D')
-    time_preference = input('Do you prefer or dislike a certrain timeslot? ')
+    time_preference = input('Do you prefer or dislike a certain timeslot? ')
     print('')
-    print('The available topics are:')
+    print('The available topics are:') # could be retrieved from the 
+    # available_topics_in_ontology function (in the utility function) to make 
+    # this flexible when we would be wanting to add more instances (of topics).
     print('[ADVANCED_ALGORITHM, AGENTS_FOUNDATION, AGENTS_COMMUNICATION,'
             'DESCRIPTION_LOGIC, ONTOLOGY, REASONING, MULTI_AGENTS,'
             ' CP_THEORY, FIRST_ORDER_LOGIC, NL_PROCESSING_SKILLS, '
@@ -129,11 +134,12 @@ def extract_preferences():
     print('These are your friends: ANNE, BERT, JOHNNY, JOSIE, TRACY')
     friend_preference = input('Do you want to take the courses that a friend'
                               ' chooses into account? ')
-    friends = [] 
-    if friend_preference:
-        friends.append(friend_preference)
+    friends = friend_preference
+    if friend_preference: # same expression as friends_preferences != ['']
         other_friend = input('One more friend? ')
         if other_friend:
+            friends = []
+            friends.append(friend_preference)
             friends.append(other_friend)
     print('')
             
@@ -151,7 +157,8 @@ def extract_preferences():
     return preferences
     
 def utility_function(preferences):
-    print('You may set utility values on each constraint. ')
+    print('You have to set utility values on each constraint. ')
+    print('Do not press enter to continue but give a value such as:')
     print('heavy preference = 1, medium = 0.5, no preference = 0, dislike = -0.5')
     weights = []
     weights.append(float(input('Choose the utility value for \'lecturer\': ')))
@@ -161,9 +168,7 @@ def utility_function(preferences):
     weights.append(float(input('Choose the utility value for \'friend\': ')))
 
     
-    # here we have to retrieve courses of term {which_term}
     which_term = int(preferences[0])
-    courses = [] 
     # dictionairies in the ontology_disctionaries look like:
     # {'s': 'http://webprotege.stanford.edu/INFOMDM', 'p': 'type', 'o': 'term1_course'}
     
@@ -179,6 +184,10 @@ def utility_function(preferences):
         
     term_course = 'term{}_course'.format(which_term)
     
+    # to start we have to retrieve courses of term {which_term}
+    courses = [] 
+    # but first we remove 'http://webprotege.stanford.edu/' from the elements
+    # of ontology_list
     for i in range(0,len(ontology_list)):
         for j in range(0,len(ontology_list[i])):
             if ontology_list[i][j][:31] == 'http://webprotege.stanford.edu/':
@@ -194,58 +203,66 @@ def utility_function(preferences):
     print(courses)
     print('')
     
-    # take out the {finished_courses}
-    # if len(preferences[2]) >= 1: 
+    # take out the {finished_courses} 
     finished = intersect(preferences[2],courses)
     for i in finished:
-        courses.remove(i)
+        if i in courses:
+            courses.remove(i)
     print('The finished courses are taken out:') # grounding
     print(courses)
     print('')
     
     # take out the {chosen_courses}
-    if len(preferences[3])>=1:
-        chosen = intersect(preferences[3],courses)
-        for i in chosen:
+    chosen = intersect(preferences[3],courses)
+    for i in chosen:
+        if i in courses:
             courses.remove(i)
-        print('The already chosen courses are taken out:')
-        print(courses)
-        print('')
+    print('The already chosen courses are taken out:')
+    print(courses)
+    print('')
         
     # each of the remaining courses gets a utility value.
-    courses_utilities = [] # list of utility values of the deduced courses
+    courses_utilities = [] 
     # elements of this list will soon look like:
     # [coursecode,pref_lecturer,pref_time,pref_topic,pref_location,pref_friend]
     for j in range(0,len(courses)):
+        # we first add the coursecodes 
         x = courses[j]
-        courses_utilities.append([x])
+        courses_utilities.append([x]) 
         for i in range(0,len(ontology_list)):
-            # seek the course code + the requested lecturer ( = preference[4] )
-            if intersect([preferences[4],x],ontology_list[i]) == [preferences[4],x]: 
-                pref_lecturer = weights[0]
+            # seek the course code + the requested lecturer (= preference[4])
+            if intersect([preferences[4],x],ontology_list[i])==[preferences[4],x]: 
+                pref_lecturer = weights[0] # The course receives (only) one 
+                # time the weight that was assigned by the for this preference
                 courses_utilities[j].append(pref_lecturer)
                 break
         if courses_utilities[j] == [x]:
+            # If the preferred lecturer (preferences[4]) does not teach the 
+            # course, it receives value 0. 
             courses_utilities[j].append(0)
+    
     
     for j in range(0,len(courses)):
         x = courses[j]
         for i in range(0,len(ontology_list)):
             # seek the course code + the requested time slot 
-            if intersect([preferences[5],x],ontology_list[i]) == [preferences[5],x]: 
+            if intersect([preferences[5],x],ontology_list[i])==[preferences[5],x]: 
                 pref_time = weights[1]
                 courses_utilities[j].append(pref_time)
                 break
         if len(courses_utilities[j]) == 2:
             courses_utilities[j].append(0)
 
-    # the following six lines merely served to access the KB 
-    available_topics = [] 
-    # unfortunately only the instances and not subclasses themselves 
-    for i in range(0,len(ontology_list)):
-        if ontology_list[i][3] == 'covers':
-            if intersect(available_topics,[ontology_list[i][5]]) == []:
-                available_topics.append(ontology_list[i][5])
+    # The following six lines merely served to access the KB and are not used
+    # but could be implemented to adapt to changing instances of topics in the
+    # ontology. 
+    def available_topics_in_ontology():
+        available_topics = [] 
+        # unfortunately only the instances and not subclasses themselves 
+        for i in range(0,len(ontology_list)):
+            if ontology_list[i][3] == 'covers':
+                if intersect(available_topics,[ontology_list[i][5]]) == []:
+                    available_topics.append(ontology_list[i][5])
     
     for j in range(0,len(courses)):
         x = courses[j]
@@ -258,32 +275,36 @@ def utility_function(preferences):
         if len(courses_utilities[j]) == 3:
             courses_utilities[j].append(0)
 
-    # the following five lines merely served to access the KB 
-    available_locations = []
-    for i in range(0,len(ontology_list)):
-        if ontology_list[i][3] == 'http://webprotege.stanford.edu/isTaughtIn':
-            if intersect(available_locations,[ontology_list[i][5]]) == []:
-                available_locations.append(ontology_list[i][5])
+    # the following five lines merely served to access the KB, same as 
+    # available_topics_in_ontology. 1
+    
+    def available_locations_in_ontology():
+        available_locations = []
+        for i in range(0,len(ontology_list)):
+            if ontology_list[i][3] == 'http://webprotege.stanford.edu/isTaughtIn':
+                if intersect(available_locations,[ontology_list[i][5]]) == []:
+                    available_locations.append(ontology_list[i][5])
     
     for j in range(0,len(courses)):
         x = courses[j]
         for i in range(0,len(ontology_list)):
             # seek the course code + the requested location
-            if intersect([preferences[7],x],ontology_list[i]) == [preferences[7],x]: 
+            if intersect([preferences[7],x],ontology_list[i])==[preferences[7],x]: 
                 pref_location = weights[3]
                 courses_utilities[j].append(pref_location)
                 break
         if len(courses_utilities[j]) == 4:
             courses_utilities[j].append(0)
-       
+
     for j in range(0,len(courses)):
         x = courses[j]
-        if len(preferences[8]) == 1:
+        if len(preferences[8]) != 2: # meaning the user entered one friend 
             for i in range(0,len(ontology_list)):
                 # seek the course code + the requested friend
-                if intersect([preferences[8],x],ontology_list[i]) == [preferences[8],x]: 
+                if intersect([preferences[8],x],ontology_list[i])==[preferences[8],x]: 
                     pref_friend = weights[4]
                     courses_utilities[j].append(pref_friend)
+                    break
             if len(courses_utilities[j]) == 5:
                 courses_utilities[j].append(0)
         if len(preferences[8]) == 2:
@@ -299,9 +320,13 @@ def utility_function(preferences):
                 if intersect([friend2,x],ontology_list[i]) == [friend2,x]: 
                     pref_friend2 = weights[4]
                     break
+            # if two friends are enrolled for a certrain course, this course
+            # receives two times the given utility value (as set by the user)
             courses_utilities[j].append(pref_friend1 + pref_friend2)    
         if len(courses_utilities[j]) == 5:
             courses_utilities[j].append(0)
+            
+    # the excluded lines here below are the start of applying the isSimilarTo        
     ''' 
     for j in range(0,len(courses)):
         x = courses[j]
