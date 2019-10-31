@@ -11,8 +11,10 @@ import numpy as np
 ## Optional: For debugging
 #owlready2.set_log_level(9) 
 
+# Get Java environment variable
+java_home = ((subprocess.check_output(['which','java'])).decode('utf-8')).rstrip()
 # To load the reasoner, we need to define the location of JRE
-owlready2.JAVA_EXE = owlready2.JAVA_EXE ="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
+owlready2.JAVA_EXE = java_home
 
 class SparqlQueries:
     def __init__(self):
@@ -84,10 +86,10 @@ def extract_preferences():
     if which_term == 1:
         if intersect(finished_courses,['INFOMAIR']) == []:
             chosen_courses.append('INFOMAIR') # mandatory course 
-            print('You have to take INFOMAIR.')
+            print('You have to take INFOMAIR. It is added as a chosen course.')
     if which_term == 3 and intersect(finished_courses,['WBMV05003']) == []:
         chosen_courses.append('WBMV05003') # mandatory course 
-        print('You have to take WBMV05003.')
+        print('You have to take WBMV05003. It is added as a chosen course.')
     elif chosen_courses == []:
         chosen_courses.append('empty')
     
@@ -99,11 +101,14 @@ def extract_preferences():
             # the prerequisite + give some explanation 
             chosen_courses.append(chosen_course)
             amount_of_courses_to_be_found -= 1
+            
             if amount_of_courses_to_be_found != 0:
                 chosen_course = input('And maybe you already chose another one? ')
                 if chosen_course:
                     if intersect(chosen_course,chosen_courses) == []:
                         chosen_courses.append(chosen_course)
+                        amount_of_courses_to_be_found -= 1
+
     print('')
     print('The available lecturers are LECTURER_X with X in {A,B, .... , H,I}')
     lecturer_preference = input('Do you prefer or dislike a certain teacher? ')
@@ -192,13 +197,13 @@ def utility_function(preferences):
     print('')
     
     # take out the {finished_courses}
-    if len(preferences[2]) >= 1: 
-        finished = intersect(preferences[2],courses)
-        for i in finished:
-            courses.remove(i)
-        print('The finished courses are taken out:') # grounding
-        print(courses)
-        print('')
+    # if len(preferences[2]) >= 1: 
+    finished = intersect(preferences[2],courses)
+    for i in finished:
+        courses.remove(i)
+    print('The finished courses are taken out:') # grounding
+    print(courses)
+    print('')
     
     # take out the {chosen_courses}
     if len(preferences[3])>=1:
@@ -329,25 +334,35 @@ def utility_function(preferences):
     sorted_sums = sorted(summed_utility, reverse = True)
     max1 = summed_utility.index(sorted_sums[0])
     # if sorted_sums[0] != sorted_sums[1]:
-    max2 = summed_utility.index(sorted_sums[1])
-    if max2 == max1:
-        summed_utility.pop(max1)
-        summed_utility.insert(max1,-10)
+    if len(sorted_sums)>1:
         max2 = summed_utility.index(sorted_sums[1])
-    max3 = summed_utility.index(sorted_sums[2])
-    if max3 == max2:
-        summed_utility.pop(max2)
-        summed_utility.insert(max2,-10)
+        if max2 == max1:
+            summed_utility.pop(max1)
+            summed_utility.insert(max1,-10)
+            max2 = summed_utility.index(sorted_sums[1])
+    if len(sorted_sums) > 2:
         max3 = summed_utility.index(sorted_sums[2])
+        if max3 == max2:
+            summed_utility.pop(max2)
+            summed_utility.insert(max2,-10)
+            max3 = summed_utility.index(sorted_sums[2])
 
     if preferences[3] != ['empty']:
-        print('Your first recommendation is {}'.format(preferences[3]))
-        print(' - because this course is obligatory.')
-        y = float(preferences[1])
-        if y > 1:
-            print('The second recommendation is the course: {}'.format(courses[max1]))
-        if y > 2:
-            print('The third recommendation is the course: {}'.format(courses[max2]))
+        if len(preferences[3]) == 2:
+            print('Your first recommendation is {}'.format(preferences[3][0]))
+            print(' - because this course is mandatory.')
+            print('Your second recommendation is {}'.format(preferences[3][1]))
+            print(' - because this course was already chosen.')
+            print('Your third recommendation is {}'.format(courses[max1]))
+            
+        if len(preferences[3]) == 1:
+            print('Your first recommendation is {}'.format(preferences[3]))
+            print(' - because this course was already chosen or is mandatory.')
+            y = float(preferences[1])
+            if y > 1:
+                print('The second recommendation is the course: {}'.format(courses[max1]))
+            if y > 2:
+                print('The third recommendation is the course: {}'.format(courses[max2]))
     else:       
         print('Your first recommendation is {}'.format(courses[max1]))
         y = float(preferences[1])
@@ -359,7 +374,7 @@ def utility_function(preferences):
 utility_function(extract_preferences()) 
 
 restart_or_not = input('Do you want to run through the program again for '
-                       'the next semeter? YES / NO ')
+                       'another term? YES / NO ')
 if restart_or_not == 'YES':
     utility_function(extract_preferences())
 
