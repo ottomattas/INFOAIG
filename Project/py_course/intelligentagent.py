@@ -202,7 +202,7 @@ def utility_function(preferences):
     
     # take out the {chosen_courses}
     if len(preferences[3])>=1:
-        chosen = intersect(preferences[2],courses)
+        chosen = intersect(preferences[3],courses)
         for i in chosen:
             courses.remove(i)
         print('The already chosen courses are taken out:')
