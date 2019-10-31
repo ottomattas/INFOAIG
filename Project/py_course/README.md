@@ -26,6 +26,8 @@ python3 intelligentagent.py
 ```
 
 ## Known issues
+
+### Python and TLS
 To load the ontology file from an online repository, we need to instruct Python to get it for us. Under some circumstances, Python might have trouble retrieving it due to issues with TLS/SSL Root Certificates.
 ```
 ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:749)
@@ -37,4 +39,14 @@ This can mean that the collection of Root Certificates that Python has included 
 ```
 sudo -H python3 -m pip install --upgrade pip
 sudo -H python3 -m pip install --upgrade certifi
+```
+
+### JRE
+Depending on your OS, our program might not find the path to your Java Runtime Environment. You can clear the error by adjusting the `java_home` variable at the head of the program. Some options are already presented while hardcoding the path also works.
+```
+# Define a variable for the JRE location
+# macOS Catalina
+java_home = ((subprocess.check_output(['which','java'])).decode('utf-8')).rstrip()
+# macOS pre-Catalina
+#java_home = "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 ```

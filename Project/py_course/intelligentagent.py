@@ -17,7 +17,7 @@ java_home = ((subprocess.check_output(['which','java'])).decode('utf-8')).rstrip
 # macOS pre-Catalina
 #java_home = "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 # Windows
-### WIP
+#WIP
 
 # To load the reasoner, we need to load the JRE through the variable
 owlready2.JAVA_EXE = java_home
