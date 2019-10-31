@@ -8,10 +8,10 @@ Currently tested on versions [3.7.5](https://www.python.org/downloads/release/py
 For this, we use `pip` as the standard package manager for Python. In case you want to learn more, visit the [project website](https://pypi.org/project/pip/). 
 We use `sudo` with the `-H` flag which makes sure we have all the environment variables loaded from the user _HOME_. Also, we call `pip` via the proper Python implemetation, using the `-m` flag.
 
-#### **owlready2** for importing the Ontology
+#### **owlready2** for importing the ontology
 ```
 sudo -H python3 -m pip install --upgrade pip
-sudo -H python3 -m pip install --upgrade Owlready2
+sudo -H python3 -m pip install --upgrade owlready2
 ```
 #### **rdflib** for querying the ontology
 ```
