@@ -85,11 +85,9 @@ def extract_preferences():
         if intersect(finished_courses,['INFOMAIR']) == []:
             chosen_courses.append('INFOMAIR') # mandatory course 
             print('You have to take INFOMAIR.')
-        amount_of_courses_to_be_found -= 1 
     if which_term == 3 and intersect(finished_courses,['WBMV05003']) == []:
         chosen_courses.append('WBMV05003') # mandatory course 
         print('You have to take WBMV05003.')
-        amount_of_courses_to_be_found -= 1 
     elif chosen_courses == []:
         chosen_courses.append('empty')
     
@@ -125,7 +123,7 @@ def extract_preferences():
                                         'BOL_3.100, RUPPERT_042, RUPPERT_115]')
     location_preference = input('Do you prefer or dislike certain location? ')
     print('')
-    print('These are your friends: [ANNE, BERT, JOHHNY, JOSIE, TRACY]')
+    print('These are your friends: ANNE, BERT, JOHNNY, JOSIE, TRACY')
     friend_preference = input('Do you want to take the courses that a friend'
                               ' chooses into account? ')
     friends = [] 
@@ -146,7 +144,6 @@ def extract_preferences():
     preferences.append(topic_preference)
     preferences.append(location_preference)
     preferences.append(friends)
-    print(preferences)
 
     return preferences
     
@@ -188,14 +185,14 @@ def utility_function(preferences):
             if ontology_list[i][3] != 'onClass':
                 if intersect(courses,[ontology_list[i][1]]) == []:
                     courses.append(ontology_list[i][1])
-                    
+    # print(ontology_list)                
     print('')   
     print('The available courses in your chosen term are:')
     print(courses)
     print('')
     
     # take out the {finished_courses}
-    if len(preferences[2])>1: # arbitrarily lower then len(coursecode)
+    if len(preferences[2]) >= 1: 
         finished = intersect(preferences[2],courses)
         for i in finished:
             courses.remove(i)
@@ -204,7 +201,7 @@ def utility_function(preferences):
         print('')
     
     # take out the {chosen_courses}
-    if len(preferences[3])>1:
+    if len(preferences[3])>=1:
         chosen = intersect(preferences[2],courses)
         for i in chosen:
             courses.remove(i)
@@ -284,7 +281,6 @@ def utility_function(preferences):
                 if intersect([preferences[8],x],ontology_list[i]) == [preferences[8],x]: 
                     pref_friend = weights[4]
                     courses_utilities[j].append(pref_friend)
-                    break
             if len(courses_utilities[j]) == 5:
                 courses_utilities[j].append(0)
         if len(preferences[8]) == 2:
@@ -303,7 +299,16 @@ def utility_function(preferences):
             courses_utilities[j].append(pref_friend1 + pref_friend2)    
         if len(courses_utilities[j]) == 5:
             courses_utilities[j].append(0)
-
+    ''' 
+    for j in range(0,len(courses)):
+        x = courses[j]
+        requested_is_course_similar_to = preferences[9]
+        for i in range(0,len(ontology_list)):
+            if intersect([preferences[9],x],ontology_list[i]) == [preferences[9],x]: 
+                pref_similar = temp_weight = 5
+                courses_utilities[j].append(pref_similar)
+    
+    '''
     print('What follows is an overview (the \'world-states\') of the assigned' 
           ' utility values:' )
           
@@ -321,33 +326,40 @@ def utility_function(preferences):
             summed += float(courses_utilities[j][i])
         summed_utility.append(summed)
     
-    if preferences[3] != []:
+    sorted_sums = sorted(summed_utility, reverse = True)
+    max1 = summed_utility.index(sorted_sums[0])
+    # if sorted_sums[0] != sorted_sums[1]:
+    max2 = summed_utility.index(sorted_sums[1])
+    if max2 == max1:
+        summed_utility.pop(max1)
+        summed_utility.insert(max1,-10)
+        max2 = summed_utility.index(sorted_sums[1])
+    max3 = summed_utility.index(sorted_sums[2])
+    if max3 == max2:
+        summed_utility.pop(max2)
+        summed_utility.insert(max2,-10)
+        max3 = summed_utility.index(sorted_sums[2])
+
+    if preferences[3] != ['empty']:
         print('Your first recommendation is {}'.format(preferences[3]))
+        print(' - because this course is obligatory.')
+        y = float(preferences[1])
+        if y > 1:
+            print('The second recommendation is the course: {}'.format(courses[max1]))
+        if y > 2:
+            print('The third recommendation is the course: {}'.format(courses[max2]))
+    else:       
+        print('Your first recommendation is {}'.format(courses[max1]))
+        y = float(preferences[1])
+        if y > 1:
+            print('The second recommendation is the course: {}'.format(courses[max2]))
+        if y > 2:
+            print('The third recommendation is the course: {}'.format(courses[max3]))
         
-    y = float(preferences[1])
-    if y > 1:
-        print('The second recommendation is the course:')
-        print(courses[summed_utility.index(max(summed_utility))])
-    if y > 2:
-        if summed_utility[0]>summed_utility[1]:
-            m, m2 = summed_utility[0], summed_utility[1]
-        else:
-            m, m2 = summed_utility[1], summed_utility[0]
-            
-        for x in summed_utility[2:]:
-            if x > m2:
-                if x > m:
-                    m2, m = m, x
-                else:
-                    m2 = x
-                print(m2)
-        course3 = courses(m2)
-        print('The third recommendation is the course:{}'.format(course3))
-    
 utility_function(extract_preferences()) 
 
 restart_or_not = input('Do you want to run through the program again for '
-                       'the next semester? YES / NO ')
+                       'the next semeter? YES / NO ')
 if restart_or_not == 'YES':
     utility_function(extract_preferences())
 
