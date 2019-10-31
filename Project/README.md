@@ -1,4 +1,4 @@
-# intelligentagent.py
+# courseplanner.py
 
 ## Requirements
 ### Install Python 3
