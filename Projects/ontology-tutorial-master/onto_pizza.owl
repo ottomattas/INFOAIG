@@ -1,0 +1,1133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#"
+     xml:base="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_0b986504_8ab0_4bfa_8b05_d8e0befb1ad8 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_0b986504_8ab0_4bfa_8b05_d8e0befb1ad8">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">relational_property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_0b986504_8ab0_4bfa_8b05_d8e0befb1ad8"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+        <rdfs:label xml:lang="en">has_topping</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_c3b4fc15_b967_43e7_89a4_23b2b90d4c7e"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has_spiciness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_9a3e8928_eb5c_4f81_97a8_2947e8838b42 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_9a3e8928_eb5c_4f81_97a8_2947e8838b42">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_0b986504_8ab0_4bfa_8b05_d8e0befb1ad8"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092"/>
+        <rdfs:label xml:lang="en">has_base</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_c3b4fc15_b967_43e7_89a4_23b2b90d4c7e -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_c3b4fc15_b967_43e7_89a4_23b2b90d4c7e">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a55dfff9_185c_4e53_b46d_818af39453ba"/>
+        <rdfs:label xml:lang="en">modifier_property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a55dfff9_185c_4e53_b46d_818af39453ba"/>
+        <rdfs:label xml:lang="en">Medium_value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_0d9d599c_6e5c_4404_b9aa_ec25a2b152db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_0d9d599c_6e5c_4404_b9aa_ec25a2b152db">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Olives_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_1cf239f2_4c0a_4051_9ff9_605bbb7ca52b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_1cf239f2_4c0a_4051_9ff9_605bbb7ca52b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Pepperoni_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_211a4bf0_c473_4f41_99c0_89e79b21a67a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_211a4bf0_c473_4f41_99c0_89e79b21a67a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092"/>
+        <rdfs:label xml:lang="en">Special_crust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5cfeed52_e6f7_4fea_b50e_83ea3b01bbdb"/>
+        <rdfs:label xml:lang="en">Pizza_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_23c70925_7bf0_4cc0_ac68_34255893c529 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_23c70925_7bf0_4cc0_ac68_34255893c529">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_29a45f7e_b99d_4a19_a729_e5d7365046df"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Medium_Spicy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_26c002a2_24e5_4d78_8226_79997f7bcdad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_26c002a2_24e5_4d78_8226_79997f7bcdad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5306e8c0_f571_4de8_a75e_f10c60d15073"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5cfeed52_e6f7_4fea_b50e_83ea3b01bbdb"/>
+        <rdfs:label xml:lang="en">Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_29a45f7e_b99d_4a19_a729_e5d7365046df -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_29a45f7e_b99d_4a19_a729_e5d7365046df">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Medium_Spicy_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_33bb2728_34be_4d45_831a_2d948d390cb9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_33bb2728_34be_4d45_831a_2d948d390cb9">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_29a45f7e_b99d_4a19_a729_e5d7365046df"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_70007990_9a92_436c_ac7d_68eeb6a96963"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Not_Spicy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_348839b0_6874_4792_b139_7dbf650e7087 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_348839b0_6874_4792_b139_7dbf650e7087">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Vegan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_351ff8a8_05bb_44a7_b835_d17bb09f5eec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_351ff8a8_05bb_44a7_b835_d17bb09f5eec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Garlic_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_3898d7b7_a905_4946_a50b_1cd6ca58c0b9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_3898d7b7_a905_4946_a50b_1cd6ca58c0b9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Margherita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_38d4c203_26dd_43fe_8d2b_0614b6930fe8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_38d4c203_26dd_43fe_8d2b_0614b6930fe8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_da7ac74f_466d_4630_9541_e81c0366d407"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gorgonzolla_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4138b600_eaa9_4f85_8fba_a6871b24e8d7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4138b600_eaa9_4f85_8fba_a6871b24e8d7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Carnivor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4d5655f1_e113_4bd5_899f_f9bef13d550f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4d5655f1_e113_4bd5_899f_f9bef13d550f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Ham_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5306e8c0_f571_4de8_a75e_f10c60d15073 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5306e8c0_f571_4de8_a75e_f10c60d15073">
+        <rdfs:label xml:lang="en">Domain_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_563cc1a9_0ecf_4dc9_94bf_f2cf97710a39 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_563cc1a9_0ecf_4dc9_94bf_f2cf97710a39">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_da7ac74f_466d_4630_9541_e81c0366d407"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Parmesan_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_56e18543_cfef_4666_92b8_038eda83bfb0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_56e18543_cfef_4666_92b8_038eda83bfb0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_70007990_9a92_436c_ac7d_68eeb6a96963"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Spicy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5a0b6324_e3df_4ea3_b899_9e90f70b70d9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5a0b6324_e3df_4ea3_b899_9e90f70b70d9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Napoli</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5cfeed52_e6f7_4fea_b50e_83ea3b01bbdb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5cfeed52_e6f7_4fea_b50e_83ea3b01bbdb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5306e8c0_f571_4de8_a75e_f10c60d15073"/>
+        <rdfs:label xml:lang="en">Independent_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6b0907e9_5ee4_4da1_a2a4_a8133e7e26f8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6b0907e9_5ee4_4da1_a2a4_a8133e7e26f8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092"/>
+        <rdfs:label xml:lang="en">Integral_crust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_b55c1b7e_a420_404d_8324_3858c87f0795"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chilli_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_0d9d599c_6e5c_4404_b9aa_ec25a2b152db"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_351ff8a8_05bb_44a7_b835_d17bb09f5eec"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7dc49c55_7c99_4019_8927_4ec81aebabee"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d4469ec4_34d0_461f_a5b7_01ea62b8cae0"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Vegetable_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_70007990_9a92_436c_ac7d_68eeb6a96963 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_70007990_9a92_436c_ac7d_68eeb6a96963">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_b55c1b7e_a420_404d_8324_3858c87f0795"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Spicy_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_799f991f_df90_41be_bef4_5be311c8aabe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_799f991f_df90_41be_bef4_5be311c8aabe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_563cc1a9_0ecf_4dc9_94bf_f2cf97710a39"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_fc5e3801_1d08_4c5d_a159_f5321efd4c82"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_563cc1a9_0ecf_4dc9_94bf_f2cf97710a39"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_fc5e3801_1d08_4c5d_a159_f5321efd4c82"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Carbonara</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7dc49c55_7c99_4019_8927_4ec81aebabee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7dc49c55_7c99_4019_8927_4ec81aebabee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Basil_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7f4d5f15_5ed6_44a0_bc72_88a89b424e9f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7f4d5f15_5ed6_44a0_bc72_88a89b424e9f">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Vegetarian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5cfeed52_e6f7_4fea_b50e_83ea3b01bbdb"/>
+        <rdfs:label xml:lang="en">Pizza_base</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_98debba8_ff72_4b5a_9a70_b090a7fc4224 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_98debba8_ff72_4b5a_9a70_b090a7fc4224">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d4469ec4_34d0_461f_a5b7_01ea62b8cae0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d4469ec4_34d0_461f_a5b7_01ea62b8cae0"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Romana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a55dfff9_185c_4e53_b46d_818af39453ba"/>
+        <rdfs:label xml:lang="en">Mild_value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_1cf239f2_4c0a_4051_9ff9_605bbb7ca52b"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4d5655f1_e113_4bd5_899f_f9bef13d550f"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c46950b1_9e29_4613_9637_540972ab6adb"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_fc5e3801_1d08_4c5d_a159_f5321efd4c82"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Meat_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a55dfff9_185c_4e53_b46d_818af39453ba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a55dfff9_185c_4e53_b46d_818af39453ba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_26c002a2_24e5_4d78_8226_79997f7bcdad"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_b55c1b7e_a420_404d_8324_3858c87f0795"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Spiciness_value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_5cfeed52_e6f7_4fea_b50e_83ea3b01bbdb"/>
+        <rdfs:label xml:lang="en">Pizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_b55c1b7e_a420_404d_8324_3858c87f0795 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_b55c1b7e_a420_404d_8324_3858c87f0795">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a55dfff9_185c_4e53_b46d_818af39453ba"/>
+        <rdfs:label xml:lang="en">Hot_value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_bd81ef10_b062_4948_a87d_875a8175ade5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_bd81ef10_b062_4948_a87d_875a8175ade5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_1cf239f2_4c0a_4051_9ff9_605bbb7ca52b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_1cf239f2_4c0a_4051_9ff9_605bbb7ca52b"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Pepperoni</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Tomato_Sauce_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c382fe7a_0002_4de0_afce_c829c1a837c1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c382fe7a_0002_4de0_afce_c829c1a837c1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c46950b1_9e29_4613_9637_540972ab6adb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c46950b1_9e29_4613_9637_540972ab6adb"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diavola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c3d0ee83_a1ee_4600_a286_e9de44674dbe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c3d0ee83_a1ee_4600_a286_e9de44674dbe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_0d9d599c_6e5c_4404_b9aa_ec25a2b152db"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_38d4c203_26dd_43fe_8d2b_0614b6930fe8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_0d9d599c_6e5c_4404_b9aa_ec25a2b152db"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_38d4c203_26dd_43fe_8d2b_0614b6930fe8"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gorgonozalla</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c46950b1_9e29_4613_9637_540972ab6adb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c46950b1_9e29_4613_9637_540972ab6adb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Salami_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_da7ac74f_466d_4630_9541_e81c0366d407"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Mozzarella_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_ccde89af_072d_43c1_b11b_479ffac30147 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_ccde89af_072d_43c1_b11b_479ffac30147">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092"/>
+        <rdfs:label xml:lang="en">Thick_crust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cf9ccd06_7799_463a_8b78_2cf3eb5e046d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cf9ccd06_7799_463a_8b78_2cf3eb5e046d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092"/>
+        <rdfs:label xml:lang="en">Thin_crust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d4469ec4_34d0_461f_a5b7_01ea62b8cae0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d4469ec4_34d0_461f_a5b7_01ea62b8cae0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6f8a1910_6746_4938_a618_7a66d7fea8d0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Capers_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d6a600e5_6f6b_40c9_9723_93205a572bb4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d6a600e5_6f6b_40c9_9723_93205a572bb4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_351ff8a8_05bb_44a7_b835_d17bb09f5eec"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7dc49c55_7c99_4019_8927_4ec81aebabee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_351ff8a8_05bb_44a7_b835_d17bb09f5eec"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7dc49c55_7c99_4019_8927_4ec81aebabee"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Marinara</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d7c9c3e2_205d_4222_8042_be332e5e721b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d7c9c3e2_205d_4222_8042_be332e5e721b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4d5655f1_e113_4bd5_899f_f9bef13d550f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4d5655f1_e113_4bd5_899f_f9bef13d550f"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Crudo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Anchovies_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_da7ac74f_466d_4630_9541_e81c0366d407 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_da7ac74f_466d_4630_9541_e81c0366d407">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_38d4c203_26dd_43fe_8d2b_0614b6930fe8"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_563cc1a9_0ecf_4dc9_94bf_f2cf97710a39"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cheese_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_dd463f17_02ec_427b_8106_b86443096cb7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_dd463f17_02ec_427b_8106_b86443096cb7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_3ab0c4a3_79d4_48a8_a6ad_af29e4332ab1"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_da7ac74f_466d_4630_9541_e81c0366d407"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Cheesey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_fc5e3801_1d08_4c5d_a159_f5321efd4c82 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_fc5e3801_1d08_4c5d_a159_f5321efd4c82">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a2bdaec9_47a9_4e2c_bc64_8a5859b612f2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLObjectProperty_41e7f229_450a_4749_8324_bf5546fdcd74"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Bacon_topping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_07a6f3ed_4734_45e7_9e5e_aafe8dd83583"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_9dcecf6e_3e8d_4807_9448_46836b354a98"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_b55c1b7e_a420_404d_8324_3858c87f0795"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_0d9d599c_6e5c_4404_b9aa_ec25a2b152db"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_1cf239f2_4c0a_4051_9ff9_605bbb7ca52b"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_351ff8a8_05bb_44a7_b835_d17bb09f5eec"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_38d4c203_26dd_43fe_8d2b_0614b6930fe8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_4d5655f1_e113_4bd5_899f_f9bef13d550f"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_563cc1a9_0ecf_4dc9_94bf_f2cf97710a39"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6e218738_8538_43df_ada8_c77061f400fe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_7dc49c55_7c99_4019_8927_4ec81aebabee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c351f853_71ca_4d84_8fd1_bc248db155d9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_c46950b1_9e29_4613_9637_540972ab6adb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cb1ef30a_b7fe_4904_9ba5_0f31595741d0"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d4469ec4_34d0_461f_a5b7_01ea62b8cae0"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_d99fe6b8_b031_4c71_9a0d_2fb19f306829"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_fc5e3801_1d08_4c5d_a159_f5321efd4c82"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_211a4bf0_c473_4f41_99c0_89e79b21a67a"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_6b0907e9_5ee4_4da1_a2a4_a8133e7e26f8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_ccde89af_072d_43c1_b11b_479ffac30147"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_cf9ccd06_7799_463a_8b78_2cf3eb5e046d"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_229e78f0_2c3e_46a2_9b0b_f93ce2241186"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_83d43c04_ef6d_46e0_9f52_c023f3a67092"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sorin/ontologies/2020/8/onto-pizza#OWLClass_a882dfbd_c2e1_41b4_aae9_81ab2d9e418d"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
