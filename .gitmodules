@@ -4,3 +4,9 @@
 [submodule "Project_2/intagents_group06"]
 	path = Project_2/intagents_group06
 	url = https://github.com/AntonioOlivaH/intagents_group06.git
+[submodule "Projects/INFOIAG-Project_2019"]
+	path = Projects/INFOIAG-Project_2019
+	url = https://github.com/ottomattas/INFOIAG-Project_2019.git
+[submodule "Projects/INFOIAG-Project_2020"]
+	path = Projects/INFOIAG-Project_2020
+	url = https://github.com/ottomattas/INFOIAG-Project_2020.git
