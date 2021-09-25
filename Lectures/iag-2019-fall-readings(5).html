@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>INFOIAG: Intelligent Agents Readings 2019</title>
+<!-- 2019-10-19 za 17:27 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Pinar Yolum" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">INFOIAG: Intelligent Agents Readings 2019</h1>
+<hr  />
+<p>
+Textbooks: 
+</p>
+
+<ul class="org-ul">
+<li>Russell, Stuart J., and Peter Norvig. Artificial intelligence: a modern approach. Malaysia; Pearson Education Limited,, 2016.
+</li>
+<li>Allemang, Dean, and James Hendler. Semantic web for the working ontologist: effective modeling in RDFS and OWL. Elsevier, 2011.
+</li>
+<li>Gómez-Pérez, Asunción, Mariano Fernández-López, and Oscar Corcho. Ontological Engineering: with examples from the areas of
+Knowledge Management, e-Commerce and the Semantic Web. Springer Science &amp; Business Media, 2006.
+</li>
+<li>Baader, F., Horrocks, I., Lutz, C., &amp; Sattler, U. (2017). Introduction to Description Logic. Cambridge University Press.
+</li>
+</ul>
+
+<p>
+Ontology:
+</p>
+
+<p>
+Required:
+</p>
+<ul class="org-ul">
+<li>Hendler, James. "Agents and the semantic web." IEEE Intelligent systems 16, no. 2 (2001): 30-37.
+</li>
+<li>Krötzsch, M., Simancik, F., &amp; Horrocks, I. (2012). A description logic primer. arXiv preprint arXiv:1201.4089.
+</li>
+</ul>
+
+<p>
+Optional:
+</p>
+<ul class="org-ul">
+<li>Baader, F., &amp; Sattler, U. (2001). An overview of tableau algorithms
+for description logics. Studia Logica, 69(1), 5-40.
+</li>
+</ul>
+
+<p>
+Trust:
+</p>
+
+<p>
+Required:
+</p>
+<ul class="org-ul">
+<li>Josang, A., &amp; Ismail, R. (2002, June). The beta reputation
+system. In Proceedings of the 15th bled electronic commerce
+conference (Vol. 5, pp. 2502-2511).
+</li>
+
+<li>Yolum, P., &amp; Singh, M. P. (2005). Engineering self-organizing
+referral networks for trustworthy service selection. IEEE
+Transactions on Systems, Man, and Cybernetics-Part A: Systems and
+Humans, 35(3), 396-407.
+</li>
+
+<li>Sensoy, M., &amp; Yolum, P. (2007). Ontology-based service
+representation and selection. IEEE Transactions on Knowledge and
+Data Engineering, 19(8), 1102-1115. 
+</li>
+</ul>
+
+<p>
+Optional:
+</p>
+<ul class="org-ul">
+<li>Teacy, W. L., Patel, J., Jennings, N. R., &amp; Luck, M. (2006). Travos:
+Trust and reputation in the context of inaccurate information
+sources. Autonomous Agents and Multi-Agent Systems, 12(2), 183-198. 
+</li>
+
+<li>Şensoy, M., Zhang, J., Yolum, P., &amp; Cohen, R. (2009). Poyraz:
+Context‐aware service selection under deception. Computational
+Intelligence, 25(4), 335-366. 
+</li>
+
+<li>Burnett, C., Norman, T. J., &amp; Sycara, K. (2010, May). Bootstrapping
+trust evaluations through stereotypes. In Proceedings of the 9th
+International Conference on Autonomous Agents and Multiagent
+Systems: volume 1-Volume 1 (pp. 241-248). International Foundation
+for Autonomous Agents and Multiagent Systems. 
+</li>
+</ul>
+
+
+<p>
+Commitments: 
+</p>
+
+<p>
+Required:
+</p>
+
+<ul class="org-ul">
+<li>Singh, M. P. (1998). Agent communication languages: Rethinking the
+principles. Computer, 31(12), 40-47.
+</li>
+<li>Yolum, P., &amp; Singh, M. P. (2002, July). Flexible protocol
+specification and execution: applying event calculus planning using
+commitments. In Proceedings of the first international joint
+conference on Autonomous agents and multiagent systems: part 2
+(pp. 527-534). ACM.
+</li>
+<li>Yolum, P., &amp; Singh, M. P. (2007, May). Enacting protocols by
+commitment concession. In Proceedings of the 6th international joint
+conference on Autonomous agents and multiagent systems (p. 27). ACM.
+</li>
+<li>Günay, A., Winikoff, M., &amp; Yolum, P. (2015). Dynamically generated
+commitment protocols in open systems. Autonomous Agents and
+Multi-Agent Systems, 29(2), 192-229. 
+</li>
+</ul>
+
+<p>
+Optional: 
+</p>
+
+<ul class="org-ul">
+<li>Günay, A., &amp; Yolum, P. (2013). Constraint satisfaction as a tool for
+modeling and checking feasibility of multiagent commitments. Applied
+intelligence, 39(3), 489-509. 
+</li>
+</ul>
+
+<p>
+Goals: 
+</p>
+
+<p>
+Optional: 
+</p>
+
+<ul class="org-ul">
+<li>Van Riemsdijk, M. B., Dastani, M., &amp; Winikoff, M. (2008, May). Goals
+in agent systems: a unifying framework. In Proceedings of the 7th
+international joint conference on Autonomous agents and multiagent
+systems-Volume 2 (pp. 713-720). International Foundation for
+Autonomous Agents and Multiagent Systems. 
+</li>
+
+<li>Chopra, A. K., Dalpiaz, F., Giorgini, P., &amp; Mylopoulos, J. (2010,
+May). Reasoning about agents and protocols via goals and
+commitments. In Proceedings of the 9th International Conference on
+Autonomous Agents and Multiagent Systems: volume 1-Volume 1
+(pp. 457-464). International Foundation for Autonomous Agents and
+Multiagent Systems. 
+</li>
+
+<li>Telang, P. R., Meneguzzi, F., &amp; Singh, M. P. (2013,
+May). Hierarchical planning about goals and commitments. In
+Proceedings of the 2013 international conference on Autonomous
+agents and multi-agent systems (pp. 877-884). International
+Foundation for Autonomous Agents and Multiagent Systems. 
+</li>
+</ul>
+
+<p>
+Privacy:
+</p>
+
+<p>
+Required:
+</p>
+<ul class="org-ul">
+<li>Kökciyan, N., &amp; Yolum, P. (2016). Priguard: A semantic approach
+to detect privacy violations in online social networks. IEEE
+Transactions on Knowledge and Data Engineering, 28(10), 2724-2737. 
+</li>
+</ul>
+
+<p>
+Optional:
+</p>
+
+<ul class="org-ul">
+<li>Fogues, R. L., Murukannaiah, P. K., Such, J. M., &amp; Singh,
+M. P. (2017). Sosharp: Recommending sharing policies in multiuser
+privacy scenarios. IEEE Internet Computing, 21(6), 28-36. 
+</li>
+
+<li>Kökciyan, N., Yaglikci, N., &amp; Yolum, P. (2017). An argumentation
+approach for resolving privacy disputes in online social
+networks. ACM Transactions on Internet Technology (TOIT),
+17(3), 27. 
+</li>
+</ul>
+</div>
+</body>
+</html>
