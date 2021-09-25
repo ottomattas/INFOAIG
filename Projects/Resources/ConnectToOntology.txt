@@ -1,0 +1,6 @@
+The zip file attached includes the required libraries for OWLAPI, Hermit reasoner and the Wine ontology.  Using these, it is
+possible to connect to the wine ontology, to send DL queries, and get their results.  DLQuery.java file contains the code to do this
+connection with an example query.
+Once you unzip the the project folder, it  can be opened with Eclipse IDE, which can be downloaded from the following link: https://www.eclipse.org/downloads/ With the Eclipse IDE, the project can be opened from File/Open Projects from File System and
+selecting the location of the project folder.
+This file is meant to be an example to show you how your code can use an existing ontology for queries.  If you prefer to use another programming language or other APIs, feel free to do so.
